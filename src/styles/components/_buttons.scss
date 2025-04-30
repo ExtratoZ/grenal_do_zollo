@@ -1,0 +1,30 @@
+@use "../variables";
+
+.button {
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+
+    &--primary {
+        color: variables.$colorInfoBarText;
+        background-color: variables.$buttomColor;
+        border-radius: 5px;
+
+        &:hover {
+            background-color: variables.$buttomColorHover;
+        }
+    }
+
+    @media (max-width: 640px) {
+        display: block;
+        width: 100%;
+    }
+
+    @media (max-width: 1024px) {
+        display: flex;
+        align-items: center;
+    }
+}

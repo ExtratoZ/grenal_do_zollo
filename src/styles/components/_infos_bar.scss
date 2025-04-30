@@ -1,0 +1,47 @@
+@use "../variables";
+
+.infos_bar {
+    padding: 16px 24px;
+    background-image: linear-gradient(to right, variables.$gremio 40%, variables.$inter);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 12px;
+
+    &__list {
+        display: flex;
+        gap : 40px;
+
+        &__item {
+            font-size: 14px;
+            color: variables.$colorInfoBarText;     
+
+            b {
+                font-size: 18px;
+                display: block;
+                color: variables.$colorInfoBarText;
+                margin-bottom: 8px;
+            }
+        }
+    }
+
+    @media (max-width: 640px) {
+        display: block;
+
+        &__list {
+            display: block;
+            gap: 6px;
+
+            &__item {
+                margin-bottom: 12px;
+            }
+        }
+    }
+
+    @media (max-width: 1024px) {
+
+        &__list {
+            gap: 62px;
+        }
+        
+    }
+}
