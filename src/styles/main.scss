@@ -2,6 +2,7 @@
 @use "components/infos_bar";
 @use "variables";
 @use "components/buttons";
+@use "event";
 
 * {
     margin: 0 auto;
@@ -10,6 +11,7 @@
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     list-style: none;
+    color: variables.$colorInfoBarText;
 }
 
 .container {
